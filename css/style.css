@@ -10,6 +10,13 @@
 /* TOP BAR */
 /* FINE TOP BAR */
 /* MAIN */
+/* Nav */
+.container-main {
+    padding: 10px;
+}
+/* Recently played*/
+/* Creato per John Doe */
+/* Artisti più popolari */
 /* FINE MAIN */
 /* LAYOUT */
 .container {
@@ -63,6 +70,7 @@ main {
     width: calc(100% - 150px);
     position: absolute;
     right: 0;
+    overflow: scroll;
 }
 .nav {
     margin-top: 100px;
@@ -129,6 +137,19 @@ main {
     width: 60px;
     height: 30px;
     background-color: palevioletred;
+}
+.recently .row, .per-john .row, .artisti .row {
+    background-color: gray;
+    height: 200px;
+    margin-top: 20px;
+}
+.recently .col, .per-john .col, .artisti .col {
+    height: 100%;
+    width: 175px;
+    background-color: yellow;
+}
+.per-john .col:last-child, .artisti .col:last-child {
+    margin-left: 40px;
 }
 /* FINE DA CANCELLARE */
 /* MEDIA */
