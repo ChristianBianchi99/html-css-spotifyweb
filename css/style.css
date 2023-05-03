@@ -14,7 +14,6 @@
 /* LAYOUT */
 .container {
     height: calc(100vh - 80px);
-    width: 100%;
 }
 .row {
     display: flex;
@@ -41,7 +40,6 @@
 }
 .side-bar .row {
     flex-direction: column;
-    width: 100%;
     height: 100%;
 }
 .side-bar .col:last-child {
@@ -61,6 +59,16 @@
     align-items: center;
     flex-direction: row-reverse;
 }
+main {
+    width: calc(100% - 150px);
+    position: absolute;
+    right: 0;
+}
+.nav {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
 /* FINE LAYOUT */
 /* GENERAL */
 .space-between {
@@ -68,6 +76,9 @@
 }
 .relative {
     position: relative;
+}
+.w-100 {
+    width: 100%;
 }
 /* FINE GENERAL */
 /* DA CANCELLARE */
@@ -85,6 +96,9 @@
 .side-bar {
     background-color: red;
 }
+.side-bar .row {
+    width: 100%;
+}
 .side-bar .col {
     background-color: aqua;
     height: 100px;
@@ -101,6 +115,20 @@
     height: 50px;
     width: 200px;
     margin-right: 50px;
+}
+main {
+    height: 100%;
+    background-color: orangered;
+}
+.nav .row {
+    width: 500px;
+    height: 50px;
+    background-color: blue;
+}
+.nav .col {
+    width: 60px;
+    height: 30px;
+    background-color: palevioletred;
 }
 /* FINE DA CANCELLARE */
 /* MEDIA */
