@@ -6,9 +6,6 @@
 /* BOTTOM BAR */
 /* FINE BOTTOM BAR */
 /* SIDE BAR */
-.side-bar .col:nth-child(2) {
-    margin-top: 10px;
-}
 /* FINE SIDE BAR */
 /* TOP BAR */
 /* FINE TOP BAR */
@@ -28,6 +25,7 @@
     left: 0;
     right: 0;
     height: 80px;
+    z-index: 100;
 }
 .bottom-bar .row {
     height: 100%;
@@ -39,6 +37,7 @@
     left: 0;
     width: 150px;
     height: 100%;
+    z-index: 10;
 }
 .side-bar .row {
     flex-direction: column;
@@ -48,6 +47,19 @@
 .side-bar .col:last-child {
     position: absolute;
     bottom: 0;
+}
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+}
+.top-bar .row {
+    height: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 /* FINE LAYOUT */
 /* GENERAL */
@@ -77,6 +89,18 @@
     background-color: aqua;
     height: 100px;
     width: 100%;
+}
+.side-bar .col:nth-child(2) {
+    margin-top: 10px;
+}
+.top-bar {
+    background-color: black;
+}
+.top-bar .col {
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    margin-right: 50px;
 }
 /* FINE DA CANCELLARE */
 /* MEDIA */
