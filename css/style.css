@@ -3,11 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: Montserrat sans-serif black;
+}
 /* BOTTOM BAR */
 /* FINE BOTTOM BAR */
 /* SIDE BAR */
 /* FINE SIDE BAR */
 /* TOP BAR */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.top-bar button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-right: 30px;
+}
 /* FINE TOP BAR */
 /* MAIN */
 /* Nav */
@@ -114,15 +130,6 @@ main {
 }
 .side-bar .col:nth-child(2) {
     margin-top: 10px;
-}
-.top-bar {
-    background-color: black;
-}
-.top-bar .col {
-    background-color: white;
-    height: 50px;
-    width: 200px;
-    margin-right: 50px;
 }
 main {
     height: 100%;
