@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* BOTTOM BAR */
+.bottom-bar {
+    height: 80px;
+}
+.bottom-bar .row {
+    height: 100%;
+    align-items: center;
+}
+/* FINE BOTTOM BAR */
+/* SIDE BAR */
+/* FINE SIDE BAR */
+/* TOP BAR */
+/* FINE TOP BAR */
+/* MAIN */
+/* FINE MAIN */
+/* LAYOUT */
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.row {
+    display: flex;
+}
+/* FINE LAYOUT */
+/* GENERAL */
+.space-between {
+    justify-content: space-between;
+}
+/* FINE GENERAL */
+/* DA CANCELLARE */
+.bottom-bar {
+    background-color: purple;
+}
+.bottom-bar .col {
+    background-color: green;
+    height: 50px;
+    width: 300px;
+}
+/* FINE DA CANCELLARE */
+/* MEDIA */
+/* FINE MEDIA */
