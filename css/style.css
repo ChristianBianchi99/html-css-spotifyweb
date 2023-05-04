@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif, black;
+    font-weight: bold;
 }
 /* BOTTOM BAR */
 .bottom-bar {
@@ -81,7 +82,6 @@ body {
 /* SIDE BAR */
 .side-bar {
     background-color: black;
-    font-weight: bold;
 }
 .side-bar .top-content {
     padding: 15px 0 0 15px;
@@ -102,6 +102,7 @@ body {
 }
 .side-bar h3 {
     margin: 20px 0 10px;
+    font-size: 14px;
 }
 .side-bar .middle-content i {
     font-size: 45px;
@@ -163,20 +164,50 @@ body {
     border: 1px solid white;
     border-radius: 30px;
     font-size: 13px;
-    font-weight: bold;
     padding: 10px 40px;
     margin-right: 30px;
     color: inherit;
+    font-weight: inherit;
 }
 /* FINE TOP BAR */
 /* MAIN */
-/* Nav */
+main {
+    background-color: rgb(20, 25, 34);
+    font-size: 14px;
+}
 .container-main {
     padding: 10px;
 }
-/* Recently played*/
-/* Creato per John Doe */
-/* Artisti più popolari */
+.nav .row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav .col {
+    margin: 0 15px 40px;
+}
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.recently, .per-john, .artisti {
+    margin-bottom: 40px;
+}
+main .section-title {
+    margin: 0 0 20px 10px;
+    font-size: 17px;
+}
+main h2 {
+    margin-bottom: 10px;
+}
+.card {
+    text-align: center;
+}
+.card h3, .card .subtitle {
+    margin-top: 10px;
+}
+.artisti img {
+    border-radius: 50%;
+}
 /* FINE MAIN */
 /* LAYOUT */
 .container {
@@ -230,6 +261,7 @@ body {
 }
 main {
     width: calc(100% - 200px);
+    height: 100%;
     position: absolute;
     right: 0;
     overflow-y: scroll;
@@ -239,6 +271,10 @@ main {
     display: flex;
     justify-content: center;
 }
+.recently .col, .per-john .col, .artisti .col {
+    width: calc(100% / 6 - 20px);
+    margin: 0 10px;
+}
 /* FINE LAYOUT */
 /* GENERAL */
 .space-between {
@@ -247,53 +283,18 @@ main {
 .relative {
     position: relative;
 }
-.w-100 {
+.w-100, .card img {
     width: 100%;
 }
-.top-bar, .bottom-bar, .side-bar h3, .side-bar .profile {
+.top-bar, .bottom-bar, .side-bar h3, .side-bar .profile, main {
     color: white;
 }
-.subtitle, .bottom-bar .icone, .side-bar {
+.subtitle, .bottom-bar .icone, .side-bar, .nav {
     color: rgb(163, 163, 163);
 }
-.side-bar, .bottom-bar .title {
+.side-bar, .bottom-bar .title, main .subtitle {
     font-size: 12px;
 }
 /* FINE GENERAL */
-/* DA CANCELLARE */
-.container {
-    color: blue;
-}
-.side-bar .col:nth-child(2) {
-    margin-top: 10px;
-}
-main {
-    height: 100%;
-    background-color: orangered;
-}
-.nav .row {
-    width: 500px;
-    height: 50px;
-    background-color: blue;
-}
-.nav .col {
-    width: 60px;
-    height: 30px;
-    background-color: palevioletred;
-}
-.recently .row, .per-john .row, .artisti .row {
-    background-color: gray;
-    height: 200px;
-    margin-top: 20px;
-}
-.recently .col, .per-john .col, .artisti .col {
-    height: 100%;
-    width: 175px;
-    background-color: yellow;
-}
-.per-john .col:last-child, .artisti .col:last-child {
-    margin-left: 40px;
-}
-/* FINE DA CANCELLARE */
 /* MEDIA */
 /* FINE MEDIA */
