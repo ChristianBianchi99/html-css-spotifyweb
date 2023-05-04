@@ -79,6 +79,80 @@ body {
 } 
 /* FINE BOTTOM BAR */
 /* SIDE BAR */
+.side-bar {
+    background-color: black;
+    font-weight: bold;
+}
+.side-bar .top-content {
+    padding: 15px 0 0 15px;
+}
+.side-bar .logo img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+.side-bar .home img, .side-bar .search img, .side-bar .library img {
+    height: 28px;
+    vertical-align: middle;
+}
+.side-bar .home, .side-bar .search {
+    margin-bottom: 5px;
+}
+.side-bar .middle-content {
+    padding-left: 15px;
+}
+.side-bar h3 {
+    margin: 20px 0 10px;
+}
+.side-bar .middle-content i {
+    font-size: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.side-bar .new-playlist span {
+    vertical-align: middle;
+}
+.side-bar .playlists {
+    overflow-y: scroll;
+    max-height: 220px;
+}
+.side-bar .playlists ul {
+    list-style-type: none;
+}
+.side-bar .playlists li {
+    margin-top: 15px;
+}
+.side-bar .bottom-content {
+    padding: 0 15px 5px;
+    background-color: black;
+}
+.side-bar .download {
+    margin-bottom: 10px;
+}
+.side-bar .download img {
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.side-bar hr {
+    width: 100%;
+}
+.side-bar .profile {
+    margin-top: 10px;
+}
+.side-bar .profile img {
+    height: 25px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+    padding: 0 1.5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.side-bar .profile span, .side-bar .new-playlist span {
+    font-size: 14px;
+}
+.side-bar .profile span {
+    vertical-align: middle;
+}
 /* FINE SIDE BAR */
 /* TOP BAR */
 .top-bar {
@@ -123,16 +197,14 @@ body {
     height: 100%;
     align-items: center;
 }
-.bottom-bar .col:nth-child(2) {
-    width: 40vw;
-}
 .side-bar {
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
-    height: 100%;
     z-index: 10;
+    height: calc(100vh - 80px);
+    overflow-y: hidden;
 }
 .side-bar .row {
     flex-direction: column;
@@ -149,6 +221,7 @@ body {
     right: 0;
     height: 80px;
     z-index: 1;
+    overflow-y: hidden;
 }
 .top-bar .row {
     height: 100%;
@@ -159,7 +232,7 @@ main {
     width: calc(100% - 200px);
     position: absolute;
     right: 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .nav {
     margin-top: 100px;
@@ -177,10 +250,10 @@ main {
 .w-100 {
     width: 100%;
 }
-.top-bar, .bottom-bar {
+.top-bar, .bottom-bar, .side-bar h3, .side-bar .profile {
     color: white;
 }
-.subtitle, .bottom-bar .icone {
+.subtitle, .bottom-bar .icone, .side-bar {
     color: rgb(163, 163, 163);
 }
 .side-bar, .bottom-bar .title {
@@ -190,17 +263,6 @@ main {
 /* DA CANCELLARE */
 .container {
     color: blue;
-}
-.side-bar {
-    background-color: red;
-}
-.side-bar .row {
-    width: 100%;
-}
-.side-bar .col {
-    background-color: aqua;
-    height: 100px;
-    width: 100%;
 }
 .side-bar .col:nth-child(2) {
     margin-top: 10px;
