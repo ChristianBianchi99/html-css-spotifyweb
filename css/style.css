@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif, black;
-    font-weight: bold;
+    font-weight: 600;
 }
 /* BOTTOM BAR */
 .bottom-bar {
@@ -28,7 +28,7 @@ body {
     font-size: 15px;
     border: 3px solid white;
     border-radius: 50%;
-    padding: 2px 4px 2px 5px;
+    padding: 3px 6px;
     margin: 0 20px;
 }
 .bottom-bar .top-content i:nth-child(2) {
@@ -77,7 +77,10 @@ body {
 }
 .bottom-bar .subtitle, .bottom-bar .timer {
     font-size: 10px;
-} 
+}
+.bottom-bar .timer {
+    font-weight: 600;
+}
 /* FINE BOTTOM BAR */
 /* SIDE BAR */
 .side-bar {
@@ -93,6 +96,8 @@ body {
 .side-bar .home img, .side-bar .search img, .side-bar .library img {
     height: 28px;
     vertical-align: middle;
+    filter: invert(1);
+    filter: brightness(0) saturate(100%) invert(65%) sepia(52%) saturate(2%) hue-rotate(104deg) brightness(91%) contrast(86%);
 }
 .side-bar .home, .side-bar .search {
     margin-bottom: 5px;
@@ -133,6 +138,9 @@ body {
     height: 15px;
     vertical-align: middle;
     margin-right: 10px;
+    color: inherit;
+    filter: invert(1);
+    filter: brightness(0) saturate(100%) invert(65%) sepia(52%) saturate(2%) hue-rotate(104deg) brightness(91%) contrast(86%);
 }
 .side-bar hr {
     width: 100%;
@@ -202,10 +210,34 @@ main h2 {
 .card {
     text-align: center;
 }
+.card-img .hover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50.5%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 101%;
+    height: 99%;
+}
+.card-img .hover .fa-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 2.7vw;
+    border: 0.4vw solid white;
+    border-radius: 50%;
+    padding: 0.4vw 0.8vw;
+}
 .card h3, .card .subtitle {
     margin-top: 10px;
 }
 .artisti img {
+    border-radius: 50%;
+}
+.artisti .card-img .hover {
     border-radius: 50%;
 }
 /* FINE MAIN */
@@ -296,5 +328,30 @@ main {
     font-size: 12px;
 }
 /* FINE GENERAL */
+/* HOVER */
+.top-bar button:hover {
+    transform: scale(1.1);
+}
+.nav a:hover, .side-bar .new-playlist:hover, .side-bar li:hover, .side-bar .download:hover, .bottom-bar .left-content .subtitle:hover, .bottom-bar .icone i:hover, .side-bar .home:hover, .side-bar .search:hover, .side-bar .library:hover {
+    color: white;
+}
+.side-bar .home:hover img, .side-bar .search:hover img, .side-bar .library:hover img {
+    filter: invert(1);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1088%) hue-rotate(121deg) brightness(115%) contrast(100%);
+}
+.side-bar .download:hover img {
+    filter: invert(1);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1088%) hue-rotate(121deg) brightness(115%) contrast(100%);
+}
+.bottom-bar .left-content .subtitle:hover {
+    text-decoration: underline;
+}
+.bottom-bar .fa-play:hover {
+    transform: scale(1.1);
+}
+.card:hover .hover, .card:hover .fa-play{
+    display: block;
+}
+/* FINE HOVER */
 /* MEDIA */
 /* FINE MEDIA */
