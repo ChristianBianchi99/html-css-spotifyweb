@@ -24,12 +24,10 @@ body {
 .bottom-bar i {
     font-size: 13px;
 }
-.bottom-bar .fa-play {
-    font-size: 15px;
-    border: 3px solid white;
-    border-radius: 50%;
-    padding: 3px 6px;
+.bottom-bar .fa-circle-play {
+    font-size: 25px;
     margin: 0 15px;
+    vertical-align: middle;
 }
 .bottom-bar .top-content i:nth-child(2) {
     margin-left: 10px;
@@ -64,8 +62,11 @@ body {
     width: 12px;
     border-radius: 50%;
     background-color: white;
-    display: none;
+    visibility: hidden;
 }
+.bottom-bar input[type="range"]::-moz-range-progress {
+    background-color: rgb(193, 193, 193); 
+}  
 .bottom-bar .bottom-content .range {
     width: calc(100% - 80px);
 }
@@ -156,6 +157,9 @@ body {
     overflow-y: scroll;
     height: 32vh;
 }
+.side-bar .playlists::-webkit-scrollbar {
+    display: none;
+}
 .side-bar .playlists ul {
     list-style-type: none;
 }
@@ -218,6 +222,9 @@ main {
     background-color: rgb(20, 25, 34);
     font-size: 14px;
 }
+main::-webkit-scrollbar {
+    display: none;
+}
 .container-main {
     padding: 10px;
 }
@@ -267,16 +274,13 @@ main h2 {
     width: 101%;
     height: 99%;
 }
-.card-img .hover .fa-play {
+.card-img .hover .fa-circle-play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    font-size: 2.7vw;
-    border: 0.4vw solid white;
-    border-radius: 50%;
-    padding: 0.4vw 0.8vw;
+    font-size: 4vw;
 }
 .card h3, .card .subtitle {
     margin-top: 10px;
@@ -401,14 +405,20 @@ main {
 .bottom-bar .left-content .subtitle:hover {
     text-decoration: underline;
 }
-.bottom-bar .fa-play:hover {
+.bottom-bar .fa-circle-play:hover {
     transform: scale(1.1);
 }
-.card:hover .hover, .card:hover .fa-play{
+.card:hover .hover, .card:hover .fa-circle-play{
     display: block;
 }
 .bottom-bar .range:hover input::-webkit-slider-thumb {
     display: block;
+}
+.bottom-bar .range:hover input::-moz-range-thumb {
+    visibility: initial;
+}
+.bottom-bar .range:hover input::-moz-range-progress {
+    background-color: greenyellow; 
 }
 /* FINE HOVER */
 /* MEDIA */
